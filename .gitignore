@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+
+# Local exports
+output/
+outputs/
+tmp/
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+
