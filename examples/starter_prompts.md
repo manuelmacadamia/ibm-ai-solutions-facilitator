@@ -1,41 +1,40 @@
 # Starter prompts
 
-## Avvio semplice
+## Simple start
 
 ```text
 /start
 ```
 
-## Avvio con contesto
+## Start with context
 
 ```text
-Guidami nel workshop AI Solutions Canvas.
+Guide me through the AI Solutions Canvas workshop.
 
-Contesto: vogliamo capire se ha senso usare AI per aiutare il customer support a trovare risposte piu velocemente.
-Utenti: operatori support e clienti finali.
-Vincoli: dati in ticket Zendesk, knowledge base non sempre aggiornata, attenzione a privacy e qualita delle risposte.
+Context: we want to understand whether it makes sense to use AI to help customer support find answers faster.
+Users: support agents and end customers.
+Constraints: data in Zendesk tickets, knowledge base not always up to date, attention to privacy and answer quality.
 ```
 
 ## Test del facilitatore
 
 ```text
-Ho gia un'idea: voglio fare un chatbot AI per i clienti. Guidami nel canvas e dimmi se e davvero una buona idea.
+I already have an idea: I want to build an AI chatbot for customers. Guide me through the canvas and tell me whether it is actually a good idea.
 ```
 
-Risposta attesa:
+Expected behavior:
 
-- Il GPT non deve accettare subito "chatbot" come soluzione.
-- Deve tornare a utente, situazione attuale, problema e outcome.
-- Deve poi passare a dati, understanding, reasoning e salvaguardie.
+- The GPT must not accept "chatbot" as the solution too quickly.
+- It must return to user, current situation, problem and outcome.
+- It must then move through data, understanding, reasoning and safeguards.
 
-## Richiesta PDF
+## PDF request
 
 ```text
 /pdf
 ```
 
-Risposta attesa:
+Expected behavior:
 
-- Se il canvas e incompleto, il GPT fa domande mancanti.
-- Se il canvas e completo, produce playback, workbook, HTML e PDF.
-
+- If the canvas is incomplete, the GPT asks the missing questions.
+- If the canvas is complete, it produces playback, workbook, HTML and PDF.

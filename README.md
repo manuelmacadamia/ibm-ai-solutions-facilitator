@@ -4,6 +4,16 @@ Repository per configurare un progetto ChatGPT che faciliti un workshop AI Solut
 
 L'obiettivo del progetto e aiutare un gruppo con competenze AI anche molto diverse a passare da un problema reale a una proposta AI ragionata, verificabile e responsabile.
 
+## Language behavior
+
+The default language is English. At the beginning of every new workshop, the agent must first ask, in English:
+
+```text
+Which language would you like to use for this workshop? You can answer in any language.
+```
+
+After that, the agent continues in the language chosen by the user. If the answer is absent or ambiguous, it continues in English.
+
 ## Cosa fa l'agente
 
 - Guida un percorso unico, senza varianti di test.
@@ -48,16 +58,16 @@ L'obiettivo del progetto e aiutare un gruppo con competenze AI anche molto diver
 2. Copia il contenuto di `system_prompt.txt` nelle istruzioni del Project.
 3. Carica come knowledge i file indicati in `source_file_checklist.md`.
 4. Se disponibile, abilita strumenti di analisi dati / creazione file.
-5. Avvia con:
+5. Start with:
 
 ```text
 /start
 ```
 
-Oppure:
+Or:
 
 ```text
-Guidami nel workshop AI Solutions Canvas.
+Guide me through the AI Solutions Canvas workshop.
 ```
 
 ## Limite fonti
