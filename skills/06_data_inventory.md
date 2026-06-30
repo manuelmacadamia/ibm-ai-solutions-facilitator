@@ -3,7 +3,7 @@
 ## Quando attivarla
 
 - Dopo la scelta della big idea.
-- Quando si parla di documenti, sistemi, dataset, log, CRM, ticket, knowledge base, dati utente.
+- Quando si parla di documenti, sistemi, dataset, log, CRM, ticket, documentazione interna, dati utente.
 
 ## Obiettivo
 
@@ -36,4 +36,3 @@ Compila:
 
 - Non accettare desideri generici: chiedi fonti reali.
 - Se compaiono dati utente o sensibili, attiva privacy, consenso e governance.
-

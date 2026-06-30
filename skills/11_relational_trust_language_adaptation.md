@@ -99,7 +99,7 @@ Usa la risposta per orientare:
 Preferisci:
 
 - "assistente configurato" invece di "agent";
-- "fonti o documenti caricati" invece di "knowledge base";
+- "fonti o documenti caricati" invece di termini tecnici di piattaforma;
 - "automazione tra strumenti" invece di "workflow orchestration";
 - "controllo umano" invece di "human-in-the-loop";
 - "usa i vostri documenti per aiutare a trovare risposte" invece di "RAG".
@@ -118,4 +118,3 @@ Preferisci:
 ## Regola finale
 
 Ogni interazione deve lasciare il gruppo con piu chiarezza, non con piu pressione.
-

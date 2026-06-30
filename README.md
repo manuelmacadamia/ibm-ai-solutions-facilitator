@@ -1,10 +1,10 @@
-# IBM AI Solutions ChatGPT Facilitator
+# IBM AI Solutions Facilitator
 
-Repository per configurare un progetto ChatGPT che faciliti un workshop AI Solutions Canvas ispirato a pratiche di AI human-centered design, Enterprise Design Thinking e AI Essentials.
+Repository per configurare un assistente AI che faciliti un workshop AI Solutions Canvas ispirato a pratiche di AI human-centered design, Enterprise Design Thinking e AI Essentials.
 
-L'obiettivo del progetto e aiutare un gruppo con competenze AI anche molto diverse a passare da un problema reale a una proposta AI ragionata, verificabile e responsabile.
+Il pacchetto e platform-agnostic: puo essere usato con ChatGPT, Gemini o Claude, a patto che la piattaforma permetta di impostare istruzioni e caricare file sorgente.
 
-## Language behavior
+## Language Behavior
 
 The default language is English. At the beginning of every new workshop, the agent must first ask, in English:
 
@@ -14,75 +14,91 @@ Which language would you like to use for this workshop? You can answer in any la
 
 After that, the agent continues in the language chosen by the user. If the answer is absent or ambiguous, it continues in English.
 
-## Cosa fa l'agente
+## What The Assistant Does
 
-- Guida un percorso unico, senza varianti di test.
-- Fa poche domande alla volta.
-- Compila progressivamente un AI Solutions Canvas.
-- Tiene conto della dimensione relazionale: scetticismo, linguaggio non tecnico, fiducia, timore di sostituzione, controllo umano.
-- Produce playback finale, decisione e workbook.
-- Se ChatGPT lo consente, genera anche HTML/PDF stampabile.
+- Guides one complete workshop flow, without multiple test variants.
+- Asks a few questions at a time.
+- Progressively builds an AI Solutions Canvas.
+- Adapts to mixed AI skill levels in the group.
+- Reduces jargon and handles skepticism without pushing AI adoption.
+- Produces a final playback, decision and workbook.
+- If the platform supports file creation, can also produce printable HTML/PDF.
 
-## Struttura
+## Quick Setup
 
-```text
-.
-├── system_prompt.txt
-├── agent_profile.md
-├── orchestrator_operating_model.md
-├── skill_manifest.md
-├── source_file_checklist.md
-├── skills/
-│   ├── 01_workshop_intake.md
-│   ├── 02_team_and_assumptions.md
-│   ├── 03_scenario_mapping.md
-│   ├── 04_ai_intent_design.md
-│   ├── 05_big_idea_generation.md
-│   ├── 06_data_inventory.md
-│   ├── 07_understanding_reasoning.md
-│   ├── 08_effects_safeguards.md
-│   ├── 09_storyboard_test_plan.md
-│   ├── 10_playback_pdf_delivery.md
-│   └── 11_relational_trust_language_adaptation.md
-├── templates/
-│   ├── canvas_state_schema.md
-│   ├── final_workbook_template.md
-│   └── html_pdf_template.md
-└── examples/
-    └── starter_prompts.md
-```
-
-## Setup in ChatGPT
-
-1. Crea un nuovo Project in ChatGPT.
-2. Copia il contenuto di `system_prompt.txt` nelle istruzioni del Project.
-3. Carica come knowledge i file indicati in `source_file_checklist.md`.
-4. Se disponibile, abilita strumenti di analisi dati / creazione file.
-5. Start with:
+1. Create a new assistant/project/gem in your platform:
+   - ChatGPT: Project or Custom GPT.
+   - Gemini: Gem.
+   - Claude: Project.
+2. Open the instruction/system prompt area.
+3. Copy the full content of `system_prompt.txt` into the instructions.
+4. Upload the source files listed in `source_file_checklist.md`.
+5. If available, enable file creation / code execution / data analysis tools.
+6. Start with:
 
 ```text
 /start
 ```
 
-Or:
+or:
 
 ```text
 Guide me through the AI Solutions Canvas workshop.
 ```
 
-## Limite fonti
+Expected first answer from the assistant:
 
-Il progetto e pensato per stare sotto il limite di 25 fonti.
+```text
+Which language would you like to use for this workshop? You can answer in any language.
+```
 
-- Fonti da caricare in ChatGPT: 19.
-- `system_prompt.txt`: da copiare nelle istruzioni, non serve caricarlo come fonte.
-- `source_file_checklist.md`: file di servizio, opzionale.
+## Which Files Matter
 
-## Flusso workshop
+Not every file has the same role.
+
+| File or folder | Role | Upload as source? |
+|---|---|---|
+| `system_prompt.txt` | Main instruction prompt. Copy this into the assistant instructions. | No, copy into instructions |
+| `agent_profile.md` | Defines the facilitator identity and tone. | Yes |
+| `orchestrator_operating_model.md` | Explains how the assistant runs the workshop. | Yes |
+| `skill_manifest.md` | Maps workshop moments to skills. | Yes |
+| `skills/` | Modular workshop skills. These are the operational core. | Yes |
+| `templates/` | Canvas state, final workbook and HTML/PDF output format. | Yes |
+| `examples/starter_prompts.md` | Test prompts for checking behavior. | Optional |
+| `source_file_checklist.md` | Human checklist for setup. | No |
+| `README.md` | GitHub documentation. | No |
+| `.gitignore`, `LICENSE` | Repository metadata. | No |
+
+## Minimum Source Set
+
+For normal use, upload these source files:
+
+- `agent_profile.md`
+- `orchestrator_operating_model.md`
+- `skill_manifest.md`
+- all files in `skills/`
+- all files in `templates/`
+
+That is 17 source files. You can also upload `examples/starter_prompts.md` if you want test prompts inside the assistant context.
+
+## Why The Files Are Organized This Way
+
+The files are split because assistants with uploaded sources usually work better when the reference material is modular:
+
+- `system_prompt.txt` gives the top-level behavior.
+- `agent_profile.md` handles identity, tone and facilitator posture.
+- `orchestrator_operating_model.md` explains the operating logic.
+- `skill_manifest.md` routes the assistant to the right skill.
+- `skills/` keeps each workshop block focused and easy to edit.
+- `templates/` keeps final output formats separate from facilitation logic.
+
+This structure is common for agent-style repositories. It is not mandatory, but it makes the project easier to maintain than one very long prompt.
+
+## Workshop Flow
 
 1. Project brief
 2. Team map
-3. Assunzioni e domande
+3. Assumptions and questions
 4. As-is scenario map
 5. Intent canvas
 6. Big idea vignettes
@@ -90,18 +106,18 @@ Il progetto e pensato per stare sotto il limite di 25 fonti.
 8. Understanding map
 9. Reasoning statement
 10. Effects & safeguards
-11. Storyboard e test plan
-12. Playback finale
+11. Storyboard and test plan
+12. Final playback
 
-## Decisione finale
+## Final Decision
 
-L'agente chiude sempre con una delle quattro decisioni:
+The assistant closes with one of four decisions:
 
 - Go
 - Pivot
 - Research first
 - Stop
 
-## Nota su IBM
+## Note On IBM
 
-Questo repository contiene prompt, skill e template originali per configurare un facilitatore ChatGPT. Non include materiali proprietari IBM. IBM e i nomi dei relativi framework sono marchi dei rispettivi proprietari; questo progetto non e affiliato o approvato da IBM.
+This repository contains original prompts, skills and templates for configuring an AI facilitator. It does not include proprietary IBM materials. IBM and related framework names are trademarks of their respective owners; this project is not affiliated with or endorsed by IBM.

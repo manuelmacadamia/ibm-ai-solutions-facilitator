@@ -37,9 +37,8 @@ Quando l'intent e vago:
 
 Quando i dati sono generici:
 
-> Nominiamo fonti dati concrete: documenti, ticket, log, feedback, CRM, knowledge base o sistemi operativi.
+> Nominiamo fonti dati concrete: documenti, ticket, log, feedback, CRM, documentazione interna o sistemi operativi.
 
 Quando la decisione sembra prematura:
 
 > Se dati critici o salvaguardie mancano, la decisione piu onesta e Research first.
-
