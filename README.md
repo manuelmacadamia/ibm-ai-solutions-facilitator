@@ -1,8 +1,8 @@
 # IBM AI Solutions Facilitator
 
-Repository per configurare un assistente AI che faciliti un workshop AI Solutions Canvas ispirato a pratiche di AI human-centered design, Enterprise Design Thinking e AI Essentials.
+Repository for configuring an AI assistant designed to facilitate an AI Solutions Canvas workshop, inspired by human-centered AI design practices, Enterprise Design Thinking, and AI Essentials.
 
-Il pacchetto e platform-agnostic: puo essere usato con ChatGPT, Gemini o Claude, a patto che la piattaforma permetta di impostare istruzioni e caricare file sorgente.
+The package is platform-agnostic: it can be used with ChatGPT, Gemini, or Claude, as long as the platform allows users to set instructions and upload source files.
 
 ## Language Behavior
 
