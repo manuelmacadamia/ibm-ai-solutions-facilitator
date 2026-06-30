@@ -2,6 +2,8 @@
 
 Quando devi generare HTML o PDF, crea un documento orizzontale 16:9 con stile simile al workbook.
 
+Le istruzioni sono indipendenti dalla piattaforma: usa HTML/PDF nativo, strumenti file o code execution se disponibili.
+
 ## Specifiche
 
 - Dimensione pagina: 16:9 landscape.
@@ -40,4 +42,3 @@ Quando devi generare HTML o PDF, crea un documento orizzontale 16:9 con stile si
 ## Regola di impaginazione
 
 Se un campo e troppo lungo, sintetizza. Il PDF e un canvas, non una trascrizione.
-

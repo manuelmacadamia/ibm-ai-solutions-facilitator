@@ -4,6 +4,10 @@
 
 # AI Solutions Canvas
 
+**Language:** {language}
+
+**Platform:** {platform}
+
 ## 0. Project brief
 
 | Campo | Risposta |
@@ -123,4 +127,3 @@ Data gap: {data_gaps}
 | Owner | {owner} |
 | Data | {date} |
 | Criterio di verifica | {verification_criterion} |
-

@@ -3,6 +3,11 @@
 Usa questa struttura come memoria di lavoro interna.
 
 ```yaml
+workshop:
+  language:
+  platform:
+  date:
+
 project_brief:
   user:
   current_situation:

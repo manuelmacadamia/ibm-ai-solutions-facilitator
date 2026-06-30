@@ -2,6 +2,8 @@
 
 Usa queste skill come comportamenti interni. Attivane una o piu in base alla sezione del workshop.
 
+Le skill sono pensate come moduli di comportamento, non come funzioni legate a una piattaforma specifica.
+
 | Skill | Trigger | Output |
 |---|---|---|
 | `workshop-intake` | avvio, contesto confuso, nuovo caso | project brief, regole, stato iniziale |

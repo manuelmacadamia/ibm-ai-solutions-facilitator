@@ -1,8 +1,8 @@
 # IBM AI Solutions Facilitator
 
-Repository per configurare un assistente AI che faciliti un workshop AI Solutions Canvas ispirato a pratiche di AI human-centered design, Enterprise Design Thinking e AI Essentials.
+Repository for configuring an AI assistant designed to facilitate an AI Solutions Canvas workshop, inspired by human-centered AI design practices, Enterprise Design Thinking, and AI Essentials.
 
-Il pacchetto e platform-agnostic: puo essere usato con ChatGPT, Gemini o Claude, a patto che la piattaforma permetta di impostare istruzioni e caricare file sorgente.
+The package is platform-agnostic: it can be used with ChatGPT, Gemini, or Claude, as long as the platform allows users to set instructions and upload source files.
 
 ## Language Behavior
 
@@ -16,11 +16,9 @@ After that, the agent continues in the language chosen by the user. If the answe
 
 ## What The Assistant Does
 
-- Guides one complete workshop flow, without multiple test variants.
-- Asks a few questions at a time.
+- Guides one complete workshop flow.
 - Progressively builds an AI Solutions Canvas.
-- Adapts to mixed AI skill levels in the group.
-- Reduces jargon and handles skepticism without pushing AI adoption.
+- Adapts to mixed AI skill levels.
 - Produces a final playback, decision and workbook.
 - If the platform supports file creation, can also produce printable HTML/PDF.
 
@@ -44,13 +42,6 @@ or:
 
 ```text
 Guide me through the AI Solutions Canvas workshop.
-```
-
-<<<<<<< HEAD
-Expected first answer from the assistant:
-
-```text
-Which language would you like to use for this workshop? You can answer in any language.
 ```
 
 ## Which Files Matter
@@ -93,8 +84,6 @@ The files are split because assistants with uploaded sources usually work better
 - `skills/` keeps each workshop block focused and easy to edit.
 - `templates/` keeps final output formats separate from facilitation logic.
 
-This structure is common for agent-style repositories. It is not mandatory, but it makes the project easier to maintain than one very long prompt.
-
 ## Workshop Flow
 
 1. Project brief
@@ -110,18 +99,7 @@ This structure is common for agent-style repositories. It is not mandatory, but 
 11. Storyboard and test plan
 12. Final playback
 
-## Final Decision
-
-The assistant closes with one of four decisions:
-
-- Go
-- Pivot
-- Research first
-- Stop
-
 ## Note On IBM
-=======
-## Nota su IBM
->>>>>>> 206cc61381001c18bab95a42d6e67fe8f704f807
 
 This repository contains original prompts, skills and templates for configuring an AI facilitator. It does not include proprietary IBM materials. IBM and related framework names are trademarks of their respective owners; this project is not affiliated with or endorsed by IBM.
+

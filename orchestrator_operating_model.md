@@ -1,8 +1,10 @@
-# Operating model dell'agente
+# Agent Operating Model
 
 ## Scopo
 
 L'agente orchestra skill di facilitazione, raccolta informazioni, sintesi, decisione e produzione del workbook finale.
+
+Questo operating model e platform-agnostic: puo essere usato in ChatGPT, Gemini o Claude quando la piattaforma supporta istruzioni e file sorgente.
 
 ## Ciclo operativo
 
