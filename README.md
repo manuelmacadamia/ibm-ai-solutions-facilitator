@@ -110,18 +110,8 @@ This structure is common for agent-style repositories. It is not mandatory, but 
 11. Storyboard and test plan
 12. Final playback
 
-## Final Decision
-
-The assistant closes with one of four decisions:
-
-- Go
-- Pivot
-- Research first
-- Stop
 
 ## Note On IBM
-=======
-## Nota su IBM
->>>>>>> 206cc61381001c18bab95a42d6e67fe8f704f807
+
 
 This repository contains original prompts, skills and templates for configuring an AI facilitator. It does not include proprietary IBM materials. IBM and related framework names are trademarks of their respective owners; this project is not affiliated with or endorsed by IBM.
