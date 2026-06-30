@@ -70,38 +70,6 @@ Or:
 Guide me through the AI Solutions Canvas workshop.
 ```
 
-## Limite fonti
-
-Il progetto e pensato per stare sotto il limite di 25 fonti.
-
-- Fonti da caricare in ChatGPT: 19.
-- `system_prompt.txt`: da copiare nelle istruzioni, non serve caricarlo come fonte.
-- `source_file_checklist.md`: file di servizio, opzionale.
-
-## Flusso workshop
-
-1. Project brief
-2. Team map
-3. Assunzioni e domande
-4. As-is scenario map
-5. Intent canvas
-6. Big idea vignettes
-7. Data inventory
-8. Understanding map
-9. Reasoning statement
-10. Effects & safeguards
-11. Storyboard e test plan
-12. Playback finale
-
-## Decisione finale
-
-L'agente chiude sempre con una delle quattro decisioni:
-
-- Go
-- Pivot
-- Research first
-- Stop
-
 ## Nota su IBM
 
 Questo repository contiene prompt, skill e template originali per configurare un facilitatore ChatGPT. Non include materiali proprietari IBM. IBM e i nomi dei relativi framework sono marchi dei rispettivi proprietari; questo progetto non e affiliato o approvato da IBM.
