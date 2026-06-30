@@ -16,11 +16,9 @@ After that, the agent continues in the language chosen by the user. If the answe
 
 ## What The Assistant Does
 
-- Guides one complete workshop flow, without multiple test variants.
-- Asks a few questions at a time.
+- Guides one complete workshop flow.
 - Progressively builds an AI Solutions Canvas.
-- Adapts to mixed AI skill levels in the group.
-- Reduces jargon and handles skepticism without pushing AI adoption.
+- Adapts to mixed AI skill levels.
 - Produces a final playback, decision and workbook.
 - If the platform supports file creation, can also produce printable HTML/PDF.
 
