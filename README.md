@@ -45,14 +45,6 @@ or:
 ```text
 Guide me through the AI Solutions Canvas workshop.
 ```
-
-<<<<<<< HEAD
-Expected first answer from the assistant:
-
-```text
-Which language would you like to use for this workshop? You can answer in any language.
-```
-
 ## Which Files Matter
 
 Not every file has the same role.
