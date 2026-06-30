@@ -112,6 +112,4 @@ This structure is common for agent-style repositories. It is not mandatory, but 
 
 
 ## Note On IBM
-
-
 This repository contains original prompts, skills and templates for configuring an AI facilitator. It does not include proprietary IBM materials. IBM and related framework names are trademarks of their respective owners; this project is not affiliated with or endorsed by IBM.
