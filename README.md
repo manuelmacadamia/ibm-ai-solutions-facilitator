@@ -83,8 +83,6 @@ The files are split because assistants with uploaded sources usually work better
 - `skills/` keeps each workshop block focused and easy to edit.
 - `templates/` keeps final output formats separate from facilitation logic.
 
-This structure is common for agent-style repositories. It is not mandatory, but it makes the project easier to maintain than one very long prompt.
-
 ## Workshop Flow
 
 1. Project brief
